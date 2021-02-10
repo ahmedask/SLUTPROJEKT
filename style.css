@@ -1,0 +1,233 @@
+/* Landing page . */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#container {
+  background-image: url(image1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} 
+
+#first-sec {
+  position: relative;
+  width: 100%;
+}
+
+
+main section #hey::after {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 90vh;
+  background:url('./code.jpg') no-repeat center center/cover ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .3;
+  z-index: 1;
+}
+
+
+nav {
+  background-color: #487eb0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 20px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  font-family: sans-serif;
+}
+
+nav ul li:hover {
+  background-color: #D980FA;
+}
+
+/* Main . */
+
+#hey {
+  color: #000;
+  text-align: center;
+  font-size: 30px; 
+  margin: auto; 
+  width: 60%;
+  padding: 200px;  
+}
+
+#about {
+  color: #000;
+  text-align: center;
+  font-size: 26px; 
+  margin: 100px; 
+  padding: 200px; 
+}
+
+#experience {
+  color: #000;
+  text-align: center;
+  font-size: 26px; 
+  margin: 100px; 
+  padding: 200px; 
+}
+
+#skills {
+  color: #000;
+  text-align: center;
+  font-size: 26px; 
+  padding: 200px; 
+}
+
+#education {
+  color: #000;
+  text-align: center;
+  font-size: 26px; 
+  margin: 250px; 
+}
+
+#contact {
+  max-width: 400px;
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+}
+
+form {
+    background: #F9F9F9;
+    padding: 25px;
+    border: 1px solid black;
+}
+
+form input,form textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+}
+
+form h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+form h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+form textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+form button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.gallery {
+  display: grid;
+  max-width: 450px;
+  margin: 0 auto;
+  padding-left: 120px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .5rem;
+  grid-auto-rows: 10rem;
+}
+
+
+/* footer . */
+
+footer {
+  background-color:#353b48;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+
+/* responsiv . */
+
+@media (max-width: 500px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    height: 640px;
+  }
+
+  nav ul li a {
+    font-size: 25px;
+  }
+
+  #hey {
+    height: 640px;
+    margin-top: 40px;
+    padding:0;
+  }
+
+  #about {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  #experience {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0px;
+    text-align: justify;
+  }
+
+  #experience h1 {
+    text-align: center;
+  }
+
+  #skills {
+    padding: 0;
+  }
+
+  #education {
+    margin: 10px;
+  }
+
+  #contact {
+    width: 90%;
+  }
+
+  .gallery {
+    padding-left: 30px;
+  }
+
+}
+
+
